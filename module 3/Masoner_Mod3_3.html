@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSD 340 Web Development with HTML and CSS</title>
+    <link rel="stylesheet" href="LastName_Mod3_3.css">
+</head>
+<body>
+    <div id="container">
+        <h1>Assignment 3.3: Build a Web Page Exercise - Part 3</h1>
+        <div style="display: flex; justify-content: space-between;">
+            <div style="width: 45%;">
+                <h3>Top 10 Favorite Books</h3>
+                <ol>
+                    <li>Book 1</li>
+                    <li>Book 2</li>
+                    <li>Book 3</li>
+                    <li>Book 4</li>
+                    <li>Book 5</li>
+                    <li>Book 6</li>
+                    <li>Book 7</li>
+                    <li>Book 8</li>
+                    <li>Book 9</li>
+                    <li>Book 10</li>
+                </ol>
+            </div>
+            <div style="width: 45%;">
+                <h3>5 Things I’ve Learned Since the Course Started</h3>
+                <ul>
+                    <li>Thing 1</li>
+                    <li>Thing 2</li>
+                    <li>Thing 3</li>
+                    <li>Thing 4</li>
+                    <li>Thing 5</li>
+                </ul>
+            </div>
+        </div>
+        <div style="width: 100%; margin-top: 60%;">
+            <a href="../index.html" style="float: right;">Back to Landing Page</a>
+        </div>
+    </div>
+</body>
+</html>
+Step 3: Create LastName_Mod3_3.css
+Create a new CSS document named LastName_Mod3_3.css in the module-3 directory.
+Add the following content to LastName_Mod3_3.css:
+h1 {
+    text-align: center;
+}
+
+div {
+    width: 45%;
+}
+
+#container div:last-child {
+    width: 100%;
+    margin-top: 60%;
+}
+
+h3 {
+    font-weight: 500;
+}
+
+ol {
+    border: 1px solid red;
+    border-radius: 15px;
+    padding: 10px;
+    list-style: decimal inside;
+}
+
+ul {
+    border: 1px dashed red;
+    border-radius: 15px;
+    padding: 10px;
+    list-style: upper-roman inside;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#container div:last-child a {
+    float: right;
+    margin-bottom: 20px;
+}
