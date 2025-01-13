@@ -3,13 +3,19 @@ h1 {
     text-align: center;
 }
 
+/* Flex container for side-by-side divs */
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+}
+
 /* Set the width of the side-by-side divs to 45% */
-div {
+.left-div, .right-div {
     width: 45%;
 }
 
 /* Set the width of the last div to 100% and give it a margin-top of 60% */
-#container div:last-child {
+.bottom-div {
     width: 100%;
     margin-top: 60%;
 }
@@ -25,7 +31,7 @@ ol, ul {
 }
 
 /* Apply a 1px solid red border with a 15px border-radius to the ordered list and its title */
-ol, ol h3 {
+ol, .left-div h3 {
     border: 1px solid red;
     border-radius: 15px;
     padding: 10px;
@@ -33,7 +39,7 @@ ol, ol h3 {
 }
 
 /* Apply a 1px dashed red border with a 15px border-radius to the unordered list and its title */
-ul, ul h3 {
+ul, .right-div h3 {
     border: 1px dashed red;
     border-radius: 15px;
     padding: 10px;
@@ -46,7 +52,7 @@ a:hover {
 }
 
 /* Give the bottom div a float right and a margin-bottom of 20px */
-#container div:last-child a {
+.bottom-div a {
     float: right;
     margin-bottom: 20px;
 }
