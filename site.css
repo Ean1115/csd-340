@@ -1,0 +1,25 @@
+#container {
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+h1, h2, h3, h4 {
+    background-color: #ADD8E6; /* Choose your preferred background color */
+    color: #000000; /* Choose a font color that contrasts well */
+    border: 1px solid #D6A800;
+    padding: 10px;
+}
+
+a {
+    color: #0000FF; /* Choose a color that blends with your scheme */
+    text-decoration: none;
+}
+
+a:hover {
+    color: #FF0000; /* Choose a hover color that blends with your scheme */
+}
+
+a:visited {
+    color: #800080; /* Choose a visited color that blends with your scheme */
+}
