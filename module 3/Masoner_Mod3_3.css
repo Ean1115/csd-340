@@ -1,38 +1,51 @@
+/* Center the h1 title on the page */
 h1 {
     text-align: center;
 }
 
+/* Set the width of the side-by-side divs to 45% */
 div {
     width: 45%;
 }
 
+/* Set the width of the last div to 100% and give it a margin-top of 60% */
 #container div:last-child {
     width: 100%;
     margin-top: 60%;
 }
 
+/* Set the weight of the h3 tags to 500 */
 h3 {
     font-weight: 500;
 }
 
-ol {
+/* Set the weight of the lists to 300 */
+ol, ul {
+    font-weight: 300;
+}
+
+/* Apply a 1px solid red border with a 15px border-radius to the ordered list and its title */
+ol, ol h3 {
     border: 1px solid red;
     border-radius: 15px;
     padding: 10px;
     list-style: decimal inside;
 }
 
-ul {
+/* Apply a 1px dashed red border with a 15px border-radius to the unordered list and its title */
+ul, ul h3 {
     border: 1px dashed red;
     border-radius: 15px;
     padding: 10px;
     list-style: upper-roman inside;
 }
 
+/* Add :hover to the links and show the underlines when a cursor hovers over the links */
 a:hover {
     text-decoration: underline;
 }
 
+/* Give the bottom div a float right and a margin-bottom of 20px */
 #container div:last-child a {
     float: right;
     margin-bottom: 20px;
