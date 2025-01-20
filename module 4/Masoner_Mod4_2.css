@@ -1,0 +1,31 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+#container {
+    text-align: center;
+}
+
+h1 {
+    color: rgba(0, 0, 255, 0.7); /* Optional color */
+}
+
+#image-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 10%;
+}
+
+h3 {
+    color: rgba(0, 128, 0, 0.7); /* Optional color */
+}
+
+figure {
+    text-align: center;
+}
+
+figcaption {
+    font-style: italic;
+    font-size: 0.75em;
+    color: rgba(255, 0, 0, 0.7); /* Optional color */
+}
