@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSD 340 Web Development with HTML and CSS</title>
+</head>
+<body>
+    <h1>Assignment 11.2: JavaScript - Part 3</h1>
+    <input type="text" id="inputBox">
+    <button onclick="addToArray()">Add</button>
+    <button onclick="deleteLast()">Delete Last Entry</button>
+    <button onclick="displayArray()">Display</button>
+
+    <script>
+        let array = [];
+
+        function addToArray() {
+            let input = document.getElementById('inputBox').value;
+            array.push(input);
+            alert(`Added: ${input} at position ${array.length}`);
+        }
+
+        function deleteLast() {
+            if (array.length > 0) {
+                let removed = array.pop();
+                alert(`Removed: ${removed}`);
+            } else {
+                alert('Array is empty.');
+            }
+        }
+
+        function displayArray() {
+            let displayString = '';
+            for (let i = 0; i < array.length; i++) {
+                displayString += `${i + 1}. ${array[i]}\n`;
+            }
+            alert(displayString);
+        }
+    </script>
+</body>
+</html>
