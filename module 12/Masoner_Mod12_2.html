@@ -1,0 +1,50 @@
+/* Ean Masoner Module 12.2 Assignment
+Csd-340 */
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSD 340 Web Development with HTML and CSS</title>
+</head>
+<body>
+    <h1>Assignment 12.2: JavaScript - Part 4</h1>
+    <p>Click the buttons to see the top ten book titles in different orders.</p>
+    
+    <button onclick="displayBooksTopToBottom()">Top to Bottom</button>
+    <button onclick="displayBooksBottomToTop()">Bottom to Top</button>
+    
+    <ul id="bookList"></ul>
+    
+    <script>
+        // Array of book titles
+        let books = ["Refugee", "The American Story", "Next War", "Echoes of Angkor", 
+                     "Valor", "Onyx Storm", "Devil May Care", "Casting Seaword", 
+                     "Fly Fishing", "The Good Death"];
+        
+        // Function to display books in ascending order
+        function displayBooksTopToBottom() {
+            let bookList = document.getElementById("bookList");
+            bookList.innerHTML = "";
+            books.sort().forEach(book => {
+                let listItem = document.createElement("li");
+                listItem.textContent = book;
+                bookList.appendChild(listItem);
+            });
+        }
+        
+        // Function to display books in descending order
+        function displayBooksBottomToTop() {
+            let bookList = document.getElementById("bookList");
+            bookList.innerHTML = "";
+            books.sort().reverse().forEach(book => {
+                let listItem = document.createElement("li");
+                listItem.textContent = book;
+                bookList.appendChild(listItem);
+            });
+        }
+    </script>
+</body>
+</html>
+		
